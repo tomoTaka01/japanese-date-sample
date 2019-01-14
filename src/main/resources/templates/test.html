@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Japanese Date Test</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/show}" method="post">
+    <p>Show Japanese Era</p>
+    <input type="date" name="inDate" />
+    <output th:text="${japaneseDate}">???</output>
+    <button type="submit">show Japanese Date</button>
+</form>
+</body>
+</html>
