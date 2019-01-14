@@ -8,7 +8,7 @@
 
 <form action="#" th:action="@{/show}" method="post">
     <p>Show Japanese Era</p>
-    <input type="date" name="inDate" />
+    <input type="date" name="inDate" th:value="${inDate}" />
     <output th:text="${japaneseDate}">???</output>
     <button type="submit">show Japanese Date</button>
 </form>
